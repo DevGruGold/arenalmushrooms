@@ -15,7 +15,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Welcome to Mike's Mushrooms
+              Welcome to Arenal Mushrooms
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-green-100">
               Premium gourmet mushrooms grown sustainably in Costa Rica's paradise
@@ -36,8 +36,75 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Farm Images Section */}
       <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Beautiful Farm & Accommodation
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Experience the magic of our working farm in Costa Rica's lush countryside. 
+              Stay overnight in our comfortable accommodations surrounded by nature.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="space-y-4">
+              <img 
+                src="/lovable-uploads/1bfef232-9383-499f-9b9e-001db95cede6.png" 
+                alt="Arenal Mushrooms Farm Property"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+              <h3 className="text-xl font-semibold text-green-700">Our Farm Property</h3>
+              <p className="text-gray-600">
+                Set in the lush El Castillo countryside, our farm offers stunning views and 
+                sustainable agriculture in perfect harmony with nature.
+              </p>
+            </div>
+            
+            <div className="space-y-4">
+              <img 
+                src="/lovable-uploads/dfc163cd-dd55-4416-b790-bb0156f46d20.png" 
+                alt="Farm Terrace with Tropical Views"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+              <h3 className="text-xl font-semibold text-green-700">Tropical Paradise</h3>
+              <p className="text-gray-600">
+                Enjoy your meals on our covered terrace surrounded by banana plants, 
+                cacao trees, and the sounds of the rainforest.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg p-8 shadow-lg">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-green-700 mb-4">Stay at Our Farm</h3>
+                <p className="text-gray-600 mb-4">
+                  Experience authentic farm life with our comfortable accommodations. 
+                  Wake up to the sounds of nature and enjoy fresh mushrooms straight 
+                  from our growing houses.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Comfortable rooms with tropical garden views</li>
+                  <li>• Fresh farm-to-table breakfast included</li>
+                  <li>• Access to farm tours and mushroom harvesting</li>
+                  <li>• Peaceful setting near Lake Arenal</li>
+                </ul>
+              </div>
+              <img 
+                src="/lovable-uploads/aa6fe412-e9f4-41b4-ac18-09367f7b7404.png" 
+                alt="Comfortable Farm Accommodation"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -78,13 +145,13 @@ const Index = () => {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="text-4xl mb-2">🚜</div>
-                <CardTitle className="text-green-700">Farm Tours</CardTitle>
+                <div className="text-4xl mb-2">🏠</div>
+                <CardTitle className="text-green-700">Farm Stay</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Explore our working farm and see cacao, banana, coffee, and mushrooms 
-                  growing in Costa Rica's beautiful countryside.
+                  Stay overnight at our farm and experience authentic Costa Rican 
+                  agriculture with comfortable accommodations.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -93,7 +160,7 @@ const Index = () => {
       </section>
 
       {/* Location Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

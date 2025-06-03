@@ -10,6 +10,7 @@ const Mushrooms = () => {
       name: "Lion's Mane",
       emoji: "🦁",
       scientificName: "Hericium erinaceus",
+      image: "https://images.unsplash.com/photo-1527130420848-8d047c3b4c2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Known for its unique appearance and seafood-like texture, Lion's Mane is prized for both culinary and health benefits.",
       benefits: [
         "Supports cognitive function and memory",
@@ -24,6 +25,7 @@ const Mushrooms = () => {
       name: "Shiitake",
       emoji: "🍄",
       scientificName: "Lentinula edodes",
+      image: "https://images.unsplash.com/photo-1544963181-d3db2a9e0d10?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "One of the world's most popular gourmet mushrooms, Shiitake offers a rich, umami flavor and numerous health benefits.",
       benefits: [
         "Boosts immune system function",
@@ -38,6 +40,7 @@ const Mushrooms = () => {
       name: "Oyster Mushrooms",
       emoji: "🌊",
       scientificName: "Pleurotus ostreatus",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Delicate and versatile, Oyster mushrooms offer a mild, slightly sweet flavor and tender texture that works in countless dishes.",
       benefits: [
         "High in protein and fiber",
@@ -52,6 +55,7 @@ const Mushrooms = () => {
       name: "Reishi",
       emoji: "✨",
       scientificName: "Ganoderma lucidum",
+      image: "https://images.unsplash.com/photo-1544963181-ad1a8bf4e9e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Known as the 'mushroom of immortality,' Reishi is prized more for its medicinal properties than culinary use.",
       benefits: [
         "Adaptogenic properties for stress relief",
@@ -126,12 +130,12 @@ const Mushrooms = () => {
                     </CardContent>
                   </div>
                   
-                  <div className={`bg-gradient-to-br from-green-200 to-emerald-300 flex items-center justify-center min-h-[300px] ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                    <div className="text-center text-green-800">
-                      <div className="text-8xl mb-4">{mushroom.emoji}</div>
-                      <p className="text-lg font-semibold">{mushroom.name}</p>
-                      <p className="text-sm">Fresh from our farm</p>
-                    </div>
+                  <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                    <img 
+                      src={mushroom.image} 
+                      alt={`Fresh ${mushroom.name} mushrooms`}
+                      className="w-full h-full object-cover min-h-[400px]"
+                    />
                   </div>
                 </div>
               </Card>
