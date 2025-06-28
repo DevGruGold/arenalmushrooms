@@ -21,7 +21,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-green-700">🍄 Arenal Mushrooms</span>
+            <span className="text-2xl font-bold text-amber-700">🍄 Lava Setas</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -30,8 +30,8 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-gray-700 hover:text-green-700 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === item.path ? 'text-green-700 bg-green-50' : ''
+                className={`text-gray-700 hover:text-amber-700 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  location.pathname === item.path ? 'text-amber-700 bg-amber-50' : ''
                 }`}
               >
                 {item.name}
@@ -61,8 +61,8 @@ const Navigation = () => {
                   to={item.path}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     location.pathname === item.path
-                      ? 'text-green-700 bg-green-50'
-                      : 'text-gray-700 hover:text-green-700 hover:bg-green-50'
+                      ? 'text-amber-700 bg-amber-50'
+                      : 'text-gray-700 hover:text-amber-700 hover:bg-amber-50'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -21,7 +21,7 @@ const BookingForm = () => {
     const peopleCount = people || 'a group';
     const requests = specialRequests ? ` Additional details: ${specialRequests}` : '';
     
-    return `Hi! I'd like to book a farm tour for ${peopleCount} people on ${formattedDate}.${requests} Looking forward to visiting Arenal Mushrooms!`;
+    return `Hi! I'd like to book a mushroom tour experience at Lava Setas for ${peopleCount} people on ${formattedDate}.${requests} Looking forward to learning about mycelium networks and tasting your gourmet mushrooms!`;
   };
 
   const handleBookTour = () => {
@@ -33,11 +33,11 @@ const BookingForm = () => {
   const isFormValid = date && people;
 
   return (
-    <Card className="backdrop-blur-sm bg-white/90 border-0 shadow-2xl">
+    <Card className="backdrop-blur-sm bg-white/95 border-0 shadow-2xl">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-green-800">Book Your Farm Tour</CardTitle>
+        <CardTitle className="text-2xl text-amber-800">Book Your Mushroom Journey</CardTitle>
         <CardDescription>
-          Experience sustainable farming and taste fresh gourmet mushrooms
+          Experience the complete story from mycelium to plate
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
@@ -105,7 +105,7 @@ const BookingForm = () => {
         <Button 
           onClick={handleBookTour}
           disabled={!isFormValid}
-          className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg font-semibold"
+          className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 text-lg font-semibold"
         >
           Book via WhatsApp
         </Button>
